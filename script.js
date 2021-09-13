@@ -50,10 +50,10 @@ function resetBoard(rodName) {
     // Lossing player gets the ball
     if (rodName === rod2Name) {
         ball.style.top = (rod1.offsetTop + rod1.offsetHeight) + 'px';
-        ballSpeedY = 2;
+        ballSpeedY = 10;
     } else if (rodName === rod1Name) {
         ball.style.top = (rod2.offsetTop - rod2.offsetHeight) + 'px';
-        ballSpeedY = -2;
+        ballSpeedY = -10;
     }
 
     score = 0;
